@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>Asterisk</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Asterisk</h1>
+        <h3>C*loque seu text* e tr*nsforme-o</h3>
+      </header>
+
+      <main>
+        <div class="generator-content-inp">
+          <input
+            type="text"
+            id="generator-inp"
+            placeholder="Digite seu texto"
+          />
+          <button id="generator-btn" type="button" onclick="stringToAsterisk()">
+            Gerar
+          </button>
+        </div>
+        <div class="generator-container">
+          <div class="res-container">
+            <p id="resDiv"></p>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
