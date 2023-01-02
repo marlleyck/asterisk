@@ -1,6 +1,15 @@
 const generatorInput = document.getElementById("generator-inp");
 const generatorButton = document.getElementById("generator-btn");
 const resDiv = document.getElementById("resDiv");
+const copyIcon = document.getElementById("copy-icon");
+
+const copyContent = async () => {
+  try {
+    await navigator.clipboard.writeText(resDiv.innerText);
+  } catch (err) {
+    console.error("Failed to copy: ", err);
+  }
+};
 
 const stringToAsterisk = () => {
   // Take input value
@@ -18,3 +27,5 @@ const stringToAsterisk = () => {
 
   resDiv.innerText = asteriskText;
 };
+
+copyIcon.addEventListener("click", copyContent);
