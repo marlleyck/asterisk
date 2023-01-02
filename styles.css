@@ -21,6 +21,10 @@ body {
 header {
   width: 100vw;
   margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /* Title */
@@ -28,7 +32,6 @@ h1 {
   font-family: "Roboto Mono", monospace;
   font-size: 2.5rem;
   color: white;
-  text-align: center;
 }
 
 /* SubTitle */
@@ -36,7 +39,11 @@ h3 {
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
   color: white;
-  text-align: center;
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.75);
 }
 
 main {
@@ -137,6 +144,30 @@ main {
 #copy-icon {
   width: 30px;
   cursor: pointer;
+}
+
+/* ===== ANIMATION ===== */
+.typing-animation {
+  animation: blinkCursor 500ms steps(40) infinite normal,
+    typing 4s steps(40) 1s normal both;
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19.3em;
+  }
 }
 
 @media screen and (max-width: 800px) {
