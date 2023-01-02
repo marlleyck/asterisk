@@ -32,6 +32,10 @@ h1 {
   font-family: "Roboto Mono", monospace;
   font-size: 2.5rem;
   color: white;
+
+  overflow: hidden;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.75);
 }
 
 /* SubTitle */
@@ -39,11 +43,7 @@ h3 {
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
   color: white;
-  white-space: nowrap;
-
-  overflow: hidden;
-
-  border-right: 1px solid rgba(255, 255, 255, 0.75);
+  text-align: center;
 }
 
 main {
@@ -149,7 +149,7 @@ main {
 /* ===== ANIMATION ===== */
 .typing-animation {
   animation: blinkCursor 500ms steps(40) infinite normal,
-    typing 4s steps(40) 1s normal both;
+    typing 3s steps(26) 1s normal both;
 }
 
 @keyframes blinkCursor {
@@ -166,7 +166,7 @@ main {
     width: 0;
   }
   to {
-    width: 19.3em;
+    width: 4.8em;
   }
 }
 
@@ -181,6 +181,10 @@ main {
 }
 
 @media screen and (max-width: 450px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+
   .generator-content-inp {
     flex-direction: column;
   }
