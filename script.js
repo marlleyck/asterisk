@@ -1,7 +1,7 @@
 const generatorInput = document.getElementById("generator-inp");
 const generatorButton = document.getElementById("generator-btn");
 const resDiv = document.getElementById("resDiv");
-const copyIcon = document.getElementById("copy-icon");
+const copyButton = document.getElementById("copy-button");
 
 // Copy text function
 const copyContent = async () => {
@@ -31,4 +31,4 @@ const stringToAsterisk = () => {
   resDiv.innerText = asteriskText;
 };
 
-copyIcon.addEventListener("click", copyContent);
+copyButton.addEventListener("click", copyContent);
