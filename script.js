@@ -3,11 +3,14 @@ const generatorButton = document.getElementById("generator-btn");
 const resDiv = document.getElementById("resDiv");
 const copyIcon = document.getElementById("copy-icon");
 
+// Copy text function
 const copyContent = async () => {
   try {
     await navigator.clipboard.writeText(resDiv.innerText);
+    alert("Copiado com sucesso!");
   } catch (err) {
-    console.error("Failed to copy: ", err);
+    console.error(err);
+    alert("Erro ao copiar");
   }
 };
 
