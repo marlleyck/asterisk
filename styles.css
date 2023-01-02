@@ -58,6 +58,10 @@ main {
   gap: 4px;
 }
 
+.generator-content-inp > button {
+  margin-bottom: 12px;
+}
+
 #generator-inp {
   width: 50%;
   font-size: 1rem;
@@ -69,7 +73,7 @@ main {
   margin-bottom: 12px;
 }
 
-#generator-btn {
+.button-class {
   width: 100px;
   color: white;
   font-family: "Roboto Mono", monospace;
@@ -87,22 +91,22 @@ main {
     #3571eb 100%
   );
 
-  margin-bottom: 12px;
   transition: filter 0.5s;
 }
 
-#generator-btn:hover {
+.button-class:hover {
   filter: brightness(0.7);
 }
 
 .generator-container {
-  width: 60%;
+  width: 80%;
   height: 60%;
   box-shadow: 6px -3px 19px 2px rgba(0, 0, 0, 0.6);
 
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 6px;
 }
 
 .res-container {
@@ -110,6 +114,7 @@ main {
   min-height: 37px;
   padding: 8px;
   border-radius: 5px;
+
   background-color: #2b2e3f;
 
   display: flex;
@@ -118,14 +123,38 @@ main {
 }
 
 #resDiv {
-  width: 100%;
+  width: 90%;
   color: white;
+  word-wrap: break-word;
   font-family: "Roboto Mono", monospace;
   text-align: center;
-  margin-left: 30px;
+}
+
+.icon-container {
+  width: 10%;
 }
 
 #copy-icon {
   width: 30px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .generator-container {
+    flex-direction: column;
+  }
+
+  .button-container {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .generator-content-inp {
+    flex-direction: column;
+  }
+
+  #generator-inp {
+    margin-bottom: 4px;
+  }
 }
