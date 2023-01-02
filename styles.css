@@ -41,7 +41,7 @@ h3 {
 
 main {
   width: 100vw;
-  height: calc(100vh - 78px);
+  height: 582px;
 
   display: flex;
   align-items: center;
