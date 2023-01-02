@@ -29,6 +29,7 @@ const stringToAsterisk = () => {
   }
 
   resultParagraph.innerText = asteriskText;
+  generatorInput.value = "";
 };
 
 copyButton.addEventListener("click", copyContent);
