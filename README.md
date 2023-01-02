@@ -1,5 +1,23 @@
 <h1 align="center">Asterisk</h1>
 
+<div align="center">
+  <div width="100%">
+    <img src="screenshots/desktop_home.png">
+  </div>
+  <hr />
+  <br />
+  
+  <div width="100%">
+    <img src="screenshots/tablet_home.png">
+  </div>
+  <hr />
+  <br />
+  
+  <div width="100%">
+    <img src="screenshots/mobile_home.png">
+  </div>
+</div>
+
 <h1 align="center">:sparkles: Tecnologias</h1>
 <p align="center">Esse projeto foi desenvolvido com</h1>
 <br />
