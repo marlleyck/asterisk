@@ -1,12 +1,12 @@
 const generatorInput = document.getElementById("generator-inp");
 const generatorButton = document.getElementById("generator-btn");
-const resDiv = document.getElementById("resDiv");
+const resultParagraph = document.getElementById("result-paragraph");
 const copyButton = document.getElementById("copy-button");
 
 // Copy text function
 const copyContent = async () => {
   try {
-    await navigator.clipboard.writeText(resDiv.innerText);
+    await navigator.clipboard.writeText(resultParagraph.innerText);
     alert("Copiado com sucesso!");
   } catch (err) {
     console.error(err);
@@ -28,7 +28,7 @@ const stringToAsterisk = () => {
     }
   }
 
-  resDiv.innerText = asteriskText;
+  resultParagraph.innerText = asteriskText;
 };
 
 copyButton.addEventListener("click", copyContent);
